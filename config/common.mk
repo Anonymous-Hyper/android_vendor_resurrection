@@ -7,7 +7,7 @@ PRODUCT_BRAND ?= ResurrectionRemix
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(GAPPS),true)
-$(call inherit-product, vendor/gapps/config.mk)
+$(call inherit-product, vendor/gapps/pixel-gapps.mk)
 endif
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
